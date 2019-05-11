@@ -37,7 +37,8 @@ The output should have the following structure for each minute in the specified 
 * moving avaerage = sum of last x minutes trasactional time / number of non zero duration in last X minutes 
 * Simple plot to visualise the moving average (second Image shown below is for sample test data)
 
-![Screenshot](/moving_avg_given data.png?raw=true "Moving Average")
+
+![Screenshot](/moving_avg_given_data.png?raw=true "Moving Average")
 
 ![Screenshot](/moving_avg.png?raw=true "Moving Average")
 
