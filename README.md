@@ -32,10 +32,14 @@ The output should have the following structure for each minute in the specified 
 
 ## Approach and Solution
 
-* Since it's not a standars JSON file, read the file line by line and save it the DataFrame to ease the process.
-* we can have multiple number of transarions for evry minute. to generalise, groupby minute to get avegare. 
-* moving avaerage = sum of last x minutes trasactional time / nuber of non zero duration in last X minutes 
-*  Simple plot to visualise the moving average
+* Since it's not a standard JSON file, read the file line by line and save it in the DataFrame to ease the process.
+* we can have multiple number of transactions for every minute. to generalise, groupby minute to get the avegare. 
+* moving avaerage = sum of last x minutes trasactional time / number of non zero duration in last X minutes 
+* Simple plot to visualise the moving average
 
 
-![Alt text](/output/moving_avg.png?raw=true "Moving Average")
+![Screenshot](/moving_avg.png?raw=true "Moving Average")
+
+## Requirements to execute the code
+* Python==3.5.2
+* matplotlib==2.0.2
