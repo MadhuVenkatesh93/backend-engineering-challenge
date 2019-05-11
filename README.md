@@ -35,8 +35,9 @@ The output should have the following structure for each minute in the specified 
 * Since it's not a standard JSON file, read the file line by line and save it in the DataFrame to ease the process.
 * we can have multiple number of transactions for every minute. to generalise, groupby minute to get the avegare. 
 * moving avaerage = sum of last x minutes trasactional time / number of non zero duration in last X minutes 
-* Simple plot to visualise the moving average
+* Simple plot to visualise the moving average (second Image shown below is for sample test data)
 
+![Screenshot](/moving_avg_given data.png?raw=true "Moving Average")
 
 ![Screenshot](/moving_avg.png?raw=true "Moving Average")
 
