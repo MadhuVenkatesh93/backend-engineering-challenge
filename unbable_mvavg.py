@@ -143,7 +143,7 @@ def visualise(data):
 def save_data(data):
 	# helper function to format the output string
 	def dict_to_str(line):
-		out = '{{"date" {}, "average_delivery_time": {}}}'.format(line['timestamp'].strftime("%Y-%m-%d %H:%M:%S"), str(int(line['moving_avg']))\
+		out = '{{"date": "{}", "average_delivery_time": {}}}'.format(str(line['timestamp'].strftime("%Y-%m-%d %H:%M:%S")), str(int(line['moving_avg']))\
 		if  line['moving_avg'].is_integer() else str(round(line['moving_avg'],2)))
 		return out
 
@@ -175,8 +175,8 @@ def main():
 	save_data(output_data)
 
 	# visualise the data in a plot
-	# uncomment this funtion to save the graph
-	visualise(output_data)
+	# uncomment this funtion to save the plot
+	# visualise(output_data)
 
 if __name__ == '__main__':
 	main()
