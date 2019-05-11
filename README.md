@@ -45,3 +45,6 @@ The output should have the following structure for each minute in the specified 
 ## Requirements to execute the code
 * Python==3.5.2
 * matplotlib==2.0.2
+
+## How to execute?
+	unbable_mvavg.py --input_file events.json --window_size 10
